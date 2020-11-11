@@ -59,7 +59,7 @@ export default class App extends Component {
         // parameter 5 checking
         for (let i=0;i<this.state.data.length; i++) {
     
-            if (this.state.data[i].Parameter5 == 0 && count1<10) {
+            if (this.state.data[i].Parameter5 === 0 && count1<10) {
                 count1+=1
                 power = false
                 console.log(this.state.data[i].Parameter5,"Count : ",count1, " i : ",i)
