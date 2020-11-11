@@ -15,7 +15,7 @@ class SquareBox extends React.Component {
                     <p>
                         {this.props.cont} 
                     </p>
-                    <h4>{this.props.alert}</h4>
+                    <h4>{this.props.alert}  {this.props.time}</h4>
                     
                     </blockquote>
                 </Card>
