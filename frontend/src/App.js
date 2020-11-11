@@ -81,21 +81,22 @@ export default class App extends Component {
     
       console.log(this.state.data[0])
 
-    //   // creating dynamic data for the graph   
-    //   this.state.data.map((item) => {
-    //         dic.push({
-    //             x:item.Parameter1,
-    //             y:item.Receive_Time
-    //         },
-    //         {
-    //             x:item.Parameter2,
-    //             y:item.Receive_Time
-    //         },
-    //         {
-    //             x:item.Parameter3,
-    //             y:item.Receive_Time
-    //         })
-    //     })
+    // creating dynamic data for the graph  
+
+      this.state.data.map((item) => {
+            dic.push({
+                x:item.Parameter1,
+                y:item.Receive_Time
+            },
+            {
+                x:item.Parameter2,
+                y:item.Receive_Time
+            },
+            {
+                x:item.Parameter3,
+                y:item.Receive_Time
+            })
+        })
 
     // Test Data
         const data = [
@@ -117,7 +118,7 @@ export default class App extends Component {
         return (
             <div>
               <div className='container-fluid bg-secondary'>
-                <h1 className='text-center display-3'>Chart</h1>
+                <h1 className='text-center display-3'>Website</h1>
               </div>
                 <div className="App container" >
                     <h1>LineChart</h1>
